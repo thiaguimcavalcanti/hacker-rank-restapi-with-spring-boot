@@ -29,7 +29,7 @@ public class EventServiceImpl implements EventService {
 
 	@Override
 	public List<Event> getEventsByActorId(Long actorId) {
-		if (!actorRepository.exists(actorId)) {
+		if (!actorRepository.existsById(actorId)) {
 			throw new NotFoundException();
 		} else {
 			Actor actor = new Actor();
@@ -44,7 +44,7 @@ public class EventServiceImpl implements EventService {
 
 	@Override
 	public Optional<Event> save(Event event) {
-		if (!eventRepository.exists(event.getId())) {
+		if (!eventRepository.existsById(event.getId())) {
 			return Optional.ofNullable(eventRepository.save(event));
 		} else {
 			throw new BadRequestException();

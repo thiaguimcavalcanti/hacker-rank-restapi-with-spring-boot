@@ -26,9 +26,9 @@ public class ActorServiceImpl implements ActorService {
 
 	@Override
 	public Optional<Actor> update(Actor actor) {
-		Actor persistedActor = actorRepository.findOne(actor.getId());
-		if (persistedActor != null) {
-			if (Objects.equals(actor.getLogin(), persistedActor.getLogin())) {
+		Optional<Actor> persistedActor = actorRepository.findById(actor.getId());
+		if (persistedActor.isPresent()) {
+			if (Objects.equals(actor.getLogin(), persistedActor.get().getLogin())) {
 				return Optional.ofNullable(actorRepository.save(actor));
 			} else {
 				throw new BadRequestException();
