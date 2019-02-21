@@ -1,0 +1,4 @@
+<factorypath>
+    <factorypathentry kind="PLUGIN" id="org.eclipse.jst.ws.annotations.core" enabled="false" runInBatchMode="false"/>
+    <factorypathentry kind="WKSPJAR" id="/github/src/main/resources/hibernate-jpamodelgen-5.3.7.Final.jar" enabled="true" runInBatchMode="false"/>
+</factorypath>
