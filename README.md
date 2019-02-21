@@ -19,13 +19,13 @@ This application creates REST APIs to solve these requirements:
 ## Technologies
 
 - Java 8
-- Spring Boot 2.1.2.RELEASE
+- Spring Boot 2.1.3.RELEASE
 - Hibernate 5.3.7.Final
 - REST API
 
 ## How to compile and run the application with an example for each call
 
-Install: git clone https://github.com/thiaguimcavalcanti/url-shortener.git
+Install: git clone https://github.com/thiaguimcavalcanti/hacker-rank-restapi-with-spring-boot.git
 
 Build: mvn package
 
@@ -33,12 +33,14 @@ Deploy: mvn spring-boot:run
 
 ## Examples for each call
 
-http://localhost:8080/save?originalUrl={url}
-
-http://localhost:8080/getById?id={id}
+{{URL}}/events
+{{URL}}/events/actors/2790320
+{{URL}}/actors/streak
+{{URL}}/actors
+{{URL}}/erase
 
 To facilitate the execution of the calls:
 
-All the others are in the file "URL Shortener.postman_collection.json" in the "src/main/resources/static/postman/" folder. 
+All the others requests are in the file "SpringBoot.postman_collection.json" in the "src/main/resources/postman/" folder with its configuration ("Spring Boot.postman_environment.json").
 The file must be imported into the Postman (https://www.getpostman.com/) application. 
 How-to: https://support.smartbear.com/readyapi/docs/testing/integrations/postman.html#importing-a-postman-collection
