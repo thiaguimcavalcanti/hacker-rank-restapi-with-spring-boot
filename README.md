@@ -28,6 +28,7 @@ This application creates REST APIs to solve these requirements:
 Install: git clone https://github.com/thiaguimcavalcanti/hacker-rank-restapi-with-spring-boot.git
 
 Build: mvn package
+- Note: After executing the build command, please to refresh the project files
 
 Deploy: mvn spring-boot:run
 

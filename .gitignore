@@ -1,2 +1,3 @@
-/.apt_generated_tests/
-/target/
+target/
+**/target/
+/src/main/java/com/hackerrank/github/model/*_.java
